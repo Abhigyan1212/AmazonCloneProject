@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: amazon-clone-project
-    env: static
-    staticPublishPath: dist
-    buildCommand: npm run build
-    branch: main
-    region: oregon
