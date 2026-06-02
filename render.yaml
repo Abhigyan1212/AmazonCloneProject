@@ -3,6 +3,6 @@ services:
     name: amazon-clone-project
     env: static
     branch: main
-    buildCommand: npm ci --prefix Amazon && npm run build --prefix Amazon
-    staticPublishPath: Amazon/dist
+  buildCommand: npm ci --prefix Amazon && npm run build --prefix Amazon && rm -rf dist && mv Amazon/dist dist
+  staticPublishPath: dist
     region: oregon
